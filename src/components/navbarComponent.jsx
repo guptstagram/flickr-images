@@ -6,9 +6,8 @@ import imageFetchAction from "../actions/imageFetchAction";
 import { localStorageAction } from "../actions/localStorageActions";
 
 const NavbarComponent = (props) => {
-
   let timer;
-  const [show,setShow]=React.useState(false);
+  const [show, setShow] = React.useState(false);
   const dispatch = useDispatch();
   const ls = useSelector((state) => state.localStorageReducer);
 
@@ -25,8 +24,7 @@ const NavbarComponent = (props) => {
     setShow(true);
   };
   const handleInputFocusOut = () => {
-    setTimeout(()=>setShow(false),200);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setTimeout(() => setShow(false), 200);
   };
 
   return (
@@ -40,7 +38,7 @@ const NavbarComponent = (props) => {
         onBlur={handleInputFocusOut}
         placeholder="Type to search..."
       />
-      {ls.length && show ? <SearchSuggestion/> : null}
+      {ls.length && show ? <SearchSuggestion /> : null}
     </nav>
   );
 };
