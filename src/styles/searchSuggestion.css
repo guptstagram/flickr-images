@@ -1,0 +1,46 @@
+.search-suggestion {
+  top: 80px;
+  padding: 20px;
+  position: absolute;
+  width: 49%;
+  z-index: 3;
+  border: 1px solid #cbcbcb;
+  border-radius: 0 0 0.25rem 0.25rem;
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 rgb(47 48 50 / 15%);
+  color: black;
+}
+
+.search-suggestion .button-align {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-suggestion .button-align button {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  background-color: #d84f4e;
+  border: 1px solid #d84f4e;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.search-suggestion .button-align button:hover {
+  background: #fff;
+  color: #d84f4e;
+}
+
+@media screen and (max-width: 768px) and (min-width:577px) {
+  .search-suggestion {
+    top: 83px;
+    width: 95.5%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .search-suggestion {
+    width: 95%;
+  }
+}
