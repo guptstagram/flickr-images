@@ -26,6 +26,7 @@ const NavbarComponent = (props) => {
   };
   const handleInputFocusOut = () => {
     setTimeout(()=>setShow(false),200);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   };
 
   return (
